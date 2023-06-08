@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="pojo" class="devera.kit.bean.model.Pojo">
+        <property name="content" value="${sample}"></property>
+    </bean>
+
+    <bean id="candy-factory" class="devera.kit.bean.model.CandyFactory" factory-method="create"/>
+
+    <bean id="car" class="devera.kit.bean.model.Car">
+        <constructor-arg type="int" value="1" />
+        <constructor-arg type="int" value="2" />
+        <constructor-arg type="int" value="3" />
+        <constructor-arg type="int" value="4" />
+    </bean>
+
+    <bean id="datetime" class="devera.kit.bean.model.Datetime">
+        <constructor-arg name="year" value="${year}"/>
+        <constructor-arg name="month" value="${month}"/>
+        <constructor-arg name="date" value="${date}"/>
+    </bean>
+
+    <bean id="store" class="devera.kit.bean.model.Store">
+        <constructor-arg ref="cus-service" />
+        <constructor-arg ref="prod-service" />
+    </bean>
+
+
+    <bean id="cus-service" class="devera.kit.bean.dependencies.CustomerService" />
+    <bean id="prod-service" class="devera.kit.bean.dependencies.ProductService" />
+</beans>
