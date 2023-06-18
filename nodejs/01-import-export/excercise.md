@@ -16,6 +16,13 @@
 
 #### 3. Cài đặt 1 thư viện bất kỳ vào `devDependencies`, tạo 1 test suit để kiểm tra giá trị trả về từ hàm và thư viện này cung cấp
 
+```javascript
+/// testsuit.test.js
+import { test } from "node:test";
+```
+
+
+
 ## III. Hard
 
 #### 1. Sử dụng module `fs`, 1 trong những package được cung cấp sẵn bởi NodeJS. Tạo file `files.js`, trong đó định nghĩa 1 hàm có tham số truyền vào là đường dẫn tới 1 file, trả về nội dung của file đó.
