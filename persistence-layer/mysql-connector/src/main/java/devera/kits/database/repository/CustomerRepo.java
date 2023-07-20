@@ -9,17 +9,13 @@ import org.springframework.stereotype.Repository;
 
 import devera.kits.database.model.Customer;
 import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 @Repository
 public class CustomerRepo {
     private JdbcTemplate template;
     private SessionFactory sess;
-
-    public CustomerRepo(JdbcTemplate template, SessionFactory sess) {
-        this.template = template;
-        this.sess = sess;
-    }
-
 
     public List<Map<String, Object>> findById(int id) {
         return template.queryForList("select * from customer where id = ?", id);
@@ -27,6 +23,9 @@ public class CustomerRepo {
     
     @Transactional
     public List<Customer> all() {
+        var session = this.sess.openSession();
+
+        var trx = session.beginTransaction();
         return this.sess.openSession()
             .createQuery("from Customer", Customer.class).list();
     }

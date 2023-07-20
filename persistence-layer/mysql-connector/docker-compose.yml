@@ -6,5 +6,8 @@ services:
     ports:
       - 4306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devera
+      MYSQL_USER: test
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'

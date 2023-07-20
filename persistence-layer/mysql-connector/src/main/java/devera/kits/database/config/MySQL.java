@@ -27,9 +27,9 @@ public class MySQL {
         var builder = DataSourceBuilder.create();
 
         // builder.driverClassName("com.mysql.cj.jdbc.Driver");
-        builder.username("root");
-        builder.password("12345678");
-        builder.url("jdbc:mysql://127.0.0.1:4306/devera");
+        builder.username("test");
+        builder.password("root");
+        builder.url("jdbc:mysql://127.0.0.1:4306/devera?allowPublicKeyRetrieval=true&useSSL=false");
 
         return builder.build();
     }
