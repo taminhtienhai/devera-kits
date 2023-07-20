@@ -12,11 +12,11 @@ import devera.kits.demo.middleware.JwtFilter;
 public class Middleware {
     
     @Bean
-    public FilterRegistrationBean<JwtFilter> jwtToken() {
+    public FilterRegistrationBean<JwtFilter> jwtToken(JwtFilter jwtFilter) {
         var filter = new FilterRegistrationBean<JwtFilter>();
 
         filter.setUrlPatterns(List.of("/user/*"));
-        filter.setFilter(new JwtFilter());
+        filter.setFilter(jwtFilter);
 
         return filter;
     }

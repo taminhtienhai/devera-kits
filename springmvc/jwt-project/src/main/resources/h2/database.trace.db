@@ -126,3 +126,33 @@ CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(2
 2023-06-18 12:58:38 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
 CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:19:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:22:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:26:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:27:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:42:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:43:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:44:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:45:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 13:49:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]
+2023-07-19 14:07:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" already exists; SQL statement:
+CREATE TABLE `user` ( id bigint unsigned AUTO_INCREMENT NOT NULL, name varchar(20), username varchar(255) NOT NULL, password varchar(255) NOT NULL, jwt_token varchar(255), created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP(), PRIMARY KEY (id), UNIQUE (username), KEY (username, jwt_token) ) [42101-214]

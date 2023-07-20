@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.auth0.jwt.interfaces.Claim;
+import com.auth0.jwt.interfaces.DecodedJWT;
+
 import devera.kits.demo.model.User;
 import devera.kits.demo.service.JwtService;
 import devera.kits.demo.service.UserService;
@@ -36,7 +39,7 @@ public class Auth {
     }
 
     @GetMapping("/verify/{token}")
-    public boolean token(@PathVariable("token") String token) {
+    public DecodedJWT verify(@PathVariable("token") String token) {
         return jwt.verify(token);
     }
 }
